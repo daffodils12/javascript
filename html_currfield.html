@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<META NAME="Generator" CONTENT="TextPad 4.6">
+<META NAME="Author" CONTENT="?">
+<META NAME="Keywords" CONTENT="?">
+<META NAME="Description" CONTENT="?">
+
+<script>
+function CurrentField(id) {
+	//alert("In function currentField");
+	//alert(id);
+	var y = document.getElementById(id);
+	y.style.backgroundColor="Aqua";
+}
+
+function resetField(id) {
+	//alert("In function resetField");
+	//alert(id);
+	var y = document.getElementById(id);
+	y.style.backgroundColor="White";
+}
+</script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#FF0000" VLINK="#800000" ALINK="#FF00FF" BACKGROUND="?">
+First Name:<input id="firstnm" type="text" placeholder="First Name" maxlength=30 onfocus="CurrentField(this.id);" onblur="resetField(this.id);"></input>
+<input id="lastnm" type="text" placeholder="Last Name" maxlength=30 onfocus="CurrentField(this.id);" onblur="resetField(this.id);"></input><br>
+	Addr Line1:<input id="addrln1" type="text" placeholder="Addr Line1" maxlength=30 onfocus="CurrentField(this.id);" onblur="resetField(this.id);"></input><br>
+	Addr Line2:<input id="addrln2" type="text" placeholder="Addr Line2" maxlength=30 onfocus="CurrentField(this.id);" onblur="resetField(this.id);"></input><br>
+	City:<input id="city" type="text" placeholder="city" maxlength=20 onfocus="CurrentField(this.id);" onblur="resetField(this.id);"></input><br>
+	State:<input id="state" type="text" placeholder="state" maxlength=2 onfocus="CurrentField(this.id);" onblur="resetField(this.id);"></input><br>
+	zip code:<input id="zipcode" type="text" placeholder="zipcode" maxlength=10 onfocus="CurrentField(this.id);" onblur="resetField(this.id);"></input><br>
+	Enter Birth Date :<input id="birthdt" type="text" placeholder="MM/DD/YYYY" maxlength=10 onfocus="CurrentField(this.id);" onblur="resetField(this.id);"></input>
+        <a href="#" onclick="Make_Calendar_def()">
+          <span class="glyphicon glyphicon-calendar"></span>
+        </a>
+	<div id="Calendar" class="cal" align="left"></div>
+	<input type="button" value="submit"></input>
+</BODY>
+</HTML>
+
+
