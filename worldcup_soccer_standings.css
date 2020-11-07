@@ -1,0 +1,19 @@
+			.tbl-generator{
+				margin:0px;padding:0px;
+				box-shadow: 10px 10px 5px #888888;
+				border:1px solid #5656ff;
+				background-color:#ffffff;				
+			}.tbl-generator table{ 
+				background-color:green;
+				color:white;			
+			}.tbl-generator tr:first-child th{ 
+				background-color:green;
+				color:white;			
+			}.tbl-generator tr:nth-child(odd){ 
+				background-color:#d4ffaa;
+			}.tbl-generator tr:nth-child(even)    {
+				background-color:#99ff66;
+			}.tbl-generator tr:hover td{
+				background-color:green;
+				color:white;
+			}
