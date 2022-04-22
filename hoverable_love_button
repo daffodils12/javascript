@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+var y=0;
+function myFunction() {
+	//alert("In function myFunction");
+    var x = document.getElementById("gl1");
+    x.style.color = "red";
+}
+
+function myFunction1() {
+  //alert("y :"+y);
+  if (y==0) {
+	//alert("In function myFunction1");
+    var x = document.getElementById("gl1");
+    x.style.color = "black";
+  }
+}
+
+function myFunction2() {
+	//alert("In function myFunction2");
+    var x = document.getElementById("gl1");
+    x.style.color = "red";
+    y=1;
+}
+</script>
+<body>
+
+
+
+<a href="#" onmouseover="myFunction()" onmouseleave="myFunction1()" onclick="myFunction2()"><i id="gl1" class="glyphicon glyphicon-heart" style="font-size:48px;color:black;"></i></a>
+
+
+</body>
+</html>
